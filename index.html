@@ -3,70 +3,131 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agro Forte & Sustentável</title>
+    <title>AgroFuturo | Produtividade Sustentável</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <header>
-        <div class="logo">Agro<span>Futuro</span></div>
-        <nav>
-            <a href="#inicio">Início</a>
-            <a href="#pilares">Pilares</a>
-            <a href="#calculadora">Equilíbrio</a>
+    <header class="main-header">
+        <div class="logo">
+            <svg class="leaf-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 3.5 1 9.8a7 7 0 0 1-9 8.2z"></path>
+                <path d="M9 22v-4H5v-4H2"></path>
+            </svg>
+            Agro<span>Futuro</span>
+        </div>
+        <nav class="nav-links">
+            <a href="#inicio" class="nav-item">Início</a>
+            <a href="#manifesto" class="nav-item">O Manifesto</a>
+            <a href="#pilares" class="nav-item">Inovação</a>
+            <a href="#simulador" class="nav-item btn-nav">Acessar Simulador</a>
         </nav>
     </header>
 
-    <section id="inicio" class="hero">
-        <div class="hero-content">
-            <h1>Agro Forte, Futuro Sustentável</h1>
-            <p>O equilíbrio perfeito entre a alta produtividade no campo e a preservação do meio ambiente.</p>
-            <a href="#pilares" class="btn">Conheça os Pilares</a>
-        </div>
-    </section>
-
-    <section id="pilares" class="pillars">
-        <h2>Produção em Harmonia com a Natureza</h2>
-        <div class="card-container">
-            <div class="card">
-                <h3>Tecnologia de Ponta</h3>
-                <p>Uso de IA, drones e sensores para otimizar o plantio e reduzir o desperdício de insumos.</p>
-            </div>
-            <div class="card">
-                <h3>Preservação Ativa</h3>
-                <p>Rotação de culturas, plantio direto e manejo correto do solo para garantir o futuro da terra.</p>
-            </div>
-            <div class="card">
-                <h3>Energia Limpa</h3>
-                <p>Fazendas movidas a energia solar e biomassa, reduzindo a pegada de carbono do agro.</p>
+    <section id="inicio" class="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="hero-wrapper">
+            <span class="badge">O Futuro é Agora</span>
+            <h1>A força do Agro.<br>A inteligência da Terra.</h1>
+            <p>Provamos que a máxima eficiência produtiva caminha lado a lado com a regeneração ambiental. Conheça a evolução do campo.</p>
+            <div class="hero-actions">
+                <a href="#simulador" class="btn btn-primary">Simular Impacto</a>
+                <a href="#manifesto" class="btn btn-secondary">Nosso Manifesto</a>
             </div>
         </div>
     </section>
 
-    <section id="calculadora" class="interactive-section">
-        <div class="calc-box">
-            <h2>Simulador de Equilíbrio</h2>
-            <p>Ajuste os níveis e veja se a sua produção é sustentável:</p>
-            
-            <div class="control-group">
-                <label for="produtividade">Nível de Produção: <span id="prod-val">50</span>%</label>
-                <input type="range" id="produtividade" min="10" max="100" value="50">
+    <section id="manifesto" class="manifesto-section">
+        <div class="section-header">
+            <h2>O Equilíbrio Essencial</h2>
+            <p>Alimentar o planeta sem esgotar o amanhã é o maior desafio tecnológico da nossa era.</p>
+        </div>
+        <div class="stats-grid">
+            <div class="stat-card">
+                <span class="stat-number" data-target="100">0</span><span class="stat-symbol">%</span>
+                <p>Rastreabilidade Digital</p>
             </div>
-
-            <div class="control-group">
-                <label for="preservacao">Práticas de Preservação: <span id="pres-val">50</span>%</label>
-                <input type="range" id="preservacao" min="10" max="100" value="50">
+            <div class="stat-card">
+                <span class="stat-number" data-target="40">0</span><span class="stat-symbol">%</span>
+                <p>Menos Emissão de CO₂</p>
             </div>
-
-            <div id="resultado" class="result-box alert-neutro">
-                Analisando dados...
+            <div class="stat-card">
+                <span class="stat-number" data-target="25">0</span><span class="stat-symbol">%</span>
+                <p>Mais Eficiência Hídrica</p>
             </div>
         </div>
     </section>
 
-    <footer>
-        <p>&copy; 2026 AgroFuturo. Cultivando o amanhã, hoje.</p>
+    <section id="pilares" class="pillars-section">
+        <div class="section-header">
+            <h2>Pilares da Produção Inteligente</h2>
+        </div>
+        <div class="glass-grid">
+            <div class="glass-card">
+                <div class="icon-wrapper">🚀</div>
+                <h3>Agricultura Autônoma</h3>
+                <p>Drones meteorológicos e maquinário conectado via IoT que aplicam insumos com precisão milimétrica, eliminando desperdícios.</p>
+            </div>
+            <div class="glass-card">
+                <div class="icon-wrapper">🌱</div>
+                <h3>Manejo Regenerativo</h3>
+                <p>Técnicas avançadas de plantio direto e rotação de culturas que fixam carbono no solo, enriquecendo a biodiversidade submersa.</p>
+            </div>
+            <div class="glass-card">
+                <div class="icon-wrapper">☀️</div>
+                <h3>Matriz Energética Circular</h3>
+                <p>Auto-suficiência energética através da combinação de usinas solares flutuantes e biodigestores de resíduos orgânicos.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="simulador" class="simulator-section">
+        <div class="simulator-container">
+            <div class="simulator-inputs">
+                <h2>Simulador de Ecossistema</h2>
+                <p class="subtitle">Ajuste os eixos estratégicos para mensurar o índice de sustentabilidade operacional da sua fazenda do futuro.</p>
+                
+                <div class="range-wrapper">
+                    <div class="range-header">
+                        <span>Capacidade de Produção</span>
+                        <span id="prod-display" class="counter">60%</span>
+                    </div>
+                    <input type="range" id="prod-slider" min="10" max="100" value="60">
+                </div>
+
+                <div class="range-wrapper">
+                    <div class="range-header">
+                        <span>Índice de Preservação Ambiental</span>
+                        <span id="pres-display" class="counter">40%</span>
+                    </div>
+                    <input type="range" id="pres-slider" min="10" max="100" value="40">
+                </div>
+            </div>
+
+            <div class="simulator-outputs">
+                <div class="gauge-card">
+                    <h3>Status do Ecossistema</h3>
+                    <div class="score-circle">
+                        <span id="score-number">50</span>
+                        <span class="score-label">Score Global</span>
+                    </div>
+                    <div id="status-badge" class="status-badge status-warning">Ajustando...</div>
+                    <p id="status-desc">Modifique os controles para recalcular o impacto em tempo real.</p>
+                    
+                    <div class="progress-bar-container">
+                        <div class="progress-bar-label">Eficiência Econômica vs Ecológica</div>
+                        <div class="bar-bg">
+                            <div id="balance-bar" class="bar-fill"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <p>&copy; 2026 AgroFuturo S/A. Conectando a ciência da computação à ciência da terra.</p>
     </footer>
 
     <script src="script.js"></script>
